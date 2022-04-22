@@ -5,4 +5,4 @@ I'll keep this page up for the duration of the PhD Days, but feel free to contac
 
 work in progress...
 
-![test image](/DaSciRecon/images/test.png)
+![test image](lauraschild/DaSciRecon/images/test.png)
