@@ -27,7 +27,8 @@ or [contact me](#about-me)
 
 ## Poster download
 ![poster](/DaSciRecon/poster/Poster_LS.png)  
-[download](/DaSciRecon/poster/Poster_LS.pdf)
+[download](/DaSciRecon/poster/Poster_LS.pdf)  
+I used the better poster approach developed by Mike Morrison. You can read more about it [here](https://astrobites.org/2020/02/28/fixing-academic-posters-the-betterposter-approach/).
  
  
 ![test image](/DaSciRecon/images/test.png)
