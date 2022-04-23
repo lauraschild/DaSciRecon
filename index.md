@@ -8,7 +8,7 @@ Thanks for scanning the QR-code and wanting to find out more about my current pr
 On here I have added some more details about 
 - [selected Methods](#methods-in-more-detail)
 - [data sources](#data-sources)
-- [references](#references)
+- [references](#references)  
 I also included a pdf of my [poster](#poster-download) as well as a link to the template I used.
 I'll keep this page up for the duration of the PhD Days, but feel free to [contact me](https://lauraschild.github.io/DaSciRecon/#about-me) if you'd like to know more.  
 or [contact me](#about-me)
@@ -26,7 +26,7 @@ or [contact me](#about-me)
  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.  
 
 ## Poster download
-![poster](/DaSciRecon/poster/Poster_LS.pdf)
+![poster](/DaSciRecon/poster/Poster_LS.png)  
 [download](/DaSciRecon/poster/Poster_LS.pdf)
  
  
