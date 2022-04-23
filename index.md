@@ -5,7 +5,8 @@
 ## Thanks for your interest!
 
 Thanks for scanning the QR-code and wanting to find out more about my current project. On here I have added some more details about selected Methods and Results and included references as well as data sources.  
-I'll keep this page up for the duration of the PhD Days, but feel free to [contact me](https://lauraschild.github.io/DaSciRecon/#about-me) if you'd like to know more.
+I'll keep this page up for the duration of the PhD Days, but feel free to [contact me](https://lauraschild.github.io/DaSciRecon/#about-me) if you'd like to know more.  
+or [contact me](#test-heading)
   
 ## Lorem ipsum
 
@@ -25,7 +26,10 @@ I'll keep this page up for the duration of the PhD Days, but feel free to [conta
  
  ## Lorem ipsum
  
- Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.  
+ 
+## test heading  
+bob loblaw
  
  
 ![test image](/DaSciRecon/images/test.png)
