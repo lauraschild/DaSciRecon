@@ -31,7 +31,6 @@ or [contact me](#about-me)
 I used the better poster approach developed by Mike Morrison. You can read more about it [here](https://astrobites.org/2020/02/28/fixing-academic-posters-the-betterposter-approach/).
  
  
-![test image](/DaSciRecon/images/test.png)
 ## About me
 ![authorportrait](/DaSciRecon/images/portrait2.jpg)  
 I'm **Laura Schild**, an environmental scientist (B.Sc.) and conservation biologist (M.Sc.) with a focus on and passion for data science.  
