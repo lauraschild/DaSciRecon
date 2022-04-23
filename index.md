@@ -1,4 +1,5 @@
-# Improving pollen-based tree cover reconstructions
+# Improving pollen-based tree cover reconstructions  
+![graphic_abstract](/DaSciRecon/images/schema.png)
 
 
 ## Thanks for your interest!
@@ -10,6 +11,7 @@ work in progress...
 ![test image](/DaSciRecon/images/test.png)
 
 ## About me
+![author_portrai](/DaSciRecon/images/portrait.jpg)  
 I'm Laura Schild a
 - Data Scientist
 - Ecologist
