@@ -6,7 +6,7 @@
 
 Thanks for scanning the QR-code and wanting to find out more about my current project. On here I have added some more details about selected Methods and Results and included references as well as data sources.  
 I'll keep this page up for the duration of the PhD Days, but feel free to [contact me](https://lauraschild.github.io/DaSciRecon/#about-me) if you'd like to know more.  
-or [contact me](#test-heading)
+or [contact me](#about-me)
   
 ## Lorem ipsum
 
@@ -33,8 +33,7 @@ bob loblaw
  
  
 ![test image](/DaSciRecon/images/test.png)
-
-<h2 id="about-me">About me</h2>
+## About me
 ![authorportrait](/DaSciRecon/images/portrait2.jpg)  
 I'm **Laura Schild**, an environmental scientist (B.Sc.) and conservation biologist (M.Sc.) with a focus on and passion for data science.  
 I'm doing my PhD in the working groups for *High-Latitude Vegetation Change* and *Earth System Diagnostics* in the section for Polar Terrestrial Environmental Systems at the AWI branch in Potsdam. My PhD project focuses on the variability of vegetation and climate in the Arctic and how we can use data science to investigate them. More broadly, I am interested in climate-vegetation interactions, climate change biology, biodiversity, and socio-ecological systems.  
