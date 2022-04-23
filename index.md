@@ -17,7 +17,7 @@ I'm Laura Schild a
 and
 - Conservation Biologist  
 I'm doing my PhD in the working groups for High-Latitude Vegetation Change and Earth System Diagnostics in the Section for **Polar Terrestrial Environmental Systems** at the AWI branch in Potsdam. I'm interested in vegetation and climate variability and stability, and how we can use data science to investigate them.  
-[my AWI page] (https://www.awi.de/ueber-uns/organisation/mitarbeiter/detailseite/laura-schild.html)
+[my AWI page](https://www.awi.de/ueber-uns/organisation/mitarbeiter/detailseite/laura-schild.html)
 
 
 
