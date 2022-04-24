@@ -24,7 +24,7 @@ Tree cover was calculated by using the fraction of tree taxa abundance over tota
 ![openness_correction](/DaSciRecon/images/open.png)
 
 ### Optimizing the Reconstruction
-The reconstruction was optimized using a simplified model for converting pollen abundances into vegetation abundances and by optimizing the taxon-specific correction coefficients. The model is based on an R-value model. It assumes that the pollen flux density produced by a specific taxon can be derived with a taxon-specific pollen parameter ($\alpha_i$). When these parameters are known for all taxa, historic vegeation ($v_{ih}$) can be reconstructed from historic pollen records.  
+The reconstruction was optimized using a simplified model for converting pollen abundances into vegetation abundances and by optimizing the taxon-specific correction coefficients. The model is based on an R-value model. It assumes that the pollen flux density produced by a specific taxon can be derived with a taxon-specific pollen parameter (_&alpha;_). When these parameters are known for all taxa, historic vegeation (*v*) can be reconstructed from historic pollen records.  
 ![model-equations](/DaSciRecon/images/r-value.png)
 
 
