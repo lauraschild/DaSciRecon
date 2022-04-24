@@ -29,7 +29,11 @@ The reconstruction was optimized using a simplified model for converting pollen 
 ![model-equations](/DaSciRecon/images/r-value.png)  
 The optimizations aim was, therefore, to estimate these correction coefficients by trying to fit the reconstructed tree cover to the remotely sensed tree cover. Bounds for these coefficients for imposed on the optimization to avoid overfitting and to supply ecological information. For that purpose the REVEALS model outputs were used as a starting point.  
 Even though REVEALS takes into account both the taxon-specific pollen productivity and fall speed, its relationship to the original pollen record can be broken down to a simple coefficient as well.
-![reveals_equat](https://latex.codecogs.com/svg.image?REVEALS&space;\:&space;estimate_i&space;=&space;x_i&space;&space;*&space;Pollen&space;\:&space;count_i)
+![reveals_equat](https://latex.codecogs.com/svg.image?REVEALS&space;estimate_i&space;=&space;x_i&space;&space;*&space;Pollen&space;count_i)  
+However, this coefficient, x, will not be the same between different samples, as it also depends on the abundance of the remaining taxa in the assemblage. This essentially means that the coefficient has to be normalized before it is comparable and can be used in the optimization.  
+The easiest way of normalizing these coeffcients is by dividing them by the coeffcient of one taxa at each site. This way the values all become relative to one taxon. An obvious taxon to use for this is Poaceae (grasses) as they are ubiquitous in records and already used to normalized pollen productivity estimates. The normalization was done using the following equation.  
+![reveals_equation2](https://latex.codecogs.com/svg.image?&space;x_i&space;=\frac{REVEALS\:estimate_i&space;*&space;Pollen\:&space;count_{Poaceae}}{Pollen\:count_i*&space;REVEALS\:estimate_{Poaceae}})  
+The normalized coefficients are very similar between sites (as they should). To now allow room for optimization, a buffer was added to the range of the coefficient values. This gives an upper and a lower bound for the coefficient of each taxon to be optimized. The correction coefficients for the remaining taxa were set to the median normalized coefficient extracted from REVEALS. For the results presented on the poster the coefficients for the ten most common taxa were optimized for each continent.
 
 
 ### Validating the new model
