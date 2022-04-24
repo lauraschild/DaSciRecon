@@ -35,7 +35,7 @@ Even though REVEALS takes into account both the taxon-specific pollen productivi
 However, this coefficient, x, will not be the same between different samples, as it also depends on the abundance of the remaining taxa in the assemblage. This essentially means that the coefficient has to be normalized before it is comparable and can be used in the optimization.  
 The easiest way of normalizing these coeffcients is by dividing them by the coeffcient of one taxa at each site. This way the values all become relative to one taxon. An obvious taxon to use for this is Poaceae (grasses) as they are ubiquitous in records and already used to normalized pollen productivity estimates. The normalization was done using the following equation.  
 
-![reveals_equation2](https://latex.codecogs.com/svg.image?&space;x_i&space;=\frac{REVEALS\:estimate_i&space;*&space;Pollen\:&space;count_{Poaceae}}{Pollen\:count_i*&space;REVEALS\:estimate_{Poaceae}})..
+![reveals_equation2](https://latex.codecogs.com/svg.image?x_i&space;=\frac{REVEALSestimate_i&space;*&space;Pollencount_{Poaceae}}{Pollencount_i*&space;REVEALSestimate_{Poaceae}})..
 
 
 The normalized coefficients are very similar between sites (as they should). To now allow room for optimization, a buffer was added to the range of the coefficient values. This gives an upper and a lower bound for the coefficient of each taxon to be optimized. The correction coefficients for the remaining taxa were set to the median normalized coefficient extracted from REVEALS. For the results presented on the poster the coefficients for the ten most common taxa were optimized for each continent.
@@ -61,10 +61,17 @@ Peter Ewald applied the REVEALS model using the pollen dataset and the parameter
 ## References
 
 - ESA, 2017. Land Cover CCI Product User Guide Version 2.  
-- Herzschuh, U., Li, C., Böhmer, T., Postl, A.K., Heim, B., Andreev, A.A., Cao, X., Wieczorek, M., Ni, J., 2022. LegacyPollen 1.0: A taxonomically harmonized global - Late Quaternary pollen dataset of 2831 records with standardized chronologies. Earth Syst. Sci. Data Discuss. 1–25. https://doi.org/10.5194/essd-2022-37  
+- Fagerlind, F., 1952. The real signification of pollen diagrams. Bot. Not. 40.  
+- Herzschuh, U., Li, C., Böhmer, T., Postl, A.K., Heim, B., Andreev, A.A., Cao, X., Wieczorek, M., Ni, J., 2022. LegacyPollen 1.0: A taxonomically harmonized global Late Quaternary pollen dataset of 2831 records with standardized chronologies. Earth Syst. Sci. Data Discuss. 1–25. https://doi.org/10.5194/essd-2022-37  
+- Parsons, R.W., Prentice, I.C., 1981. Statistical approaches to R-values and the pollen— vegetation relationship. Rev. Palaeobot. Palynol. 32, 127–152. https://doi.org/10.1016/0034-6667(81)90001-4  
+- Prentice, I.C., Webb III, T., 1986. Pollen percentages, tree abundances and the Fagerlind effect. J. Quat. Sci. 1, 35–43. https://doi.org/10.1002/jqs.3390010105  
+- Roberts, D.R., Bahn, V., Ciuti, S., Boyce, M.S., Elith, J., Guillera-Arroita, G., Hauenstein, S., Lahoz-Monfort, J.J., Schröder, B., Thuiller, W., Warton, D.I., Wintle, B.A., Hartig, F., Dormann, C.F., 2017. Cross-validation strategies for data with temporal, spatial, hierarchical, or phylogenetic structure. Ecography 40, 913–929. https://doi.org/10.1111/ecog.02881  
 - Sugita, S., 2007. Theory of quantitative reconstruction of vegetation I: pollen from large sites REVEALS regional vegetation composition. The Holocene 17, 229–241. https://doi.org/10.1177/0959683607075837  
+- Telford, R.J., Birks, H.J.B., 2011. QSR Correspondence “Is spatial autocorrelation introducing biases in the apparent accuracy of palaeoclimatic reconstructions?” Quat. Sci. Rev. 30, 3210–3213. https://doi.org/10.1016/j.quascirev.2011.07.019  
 - Tuanmu, M.-N., Jetz, W., 2014. A global 1-km consensus land-cover product for biodiversity and ecosystem modelling. Glob. Ecol. Biogeogr. 23, 1031–1045. https://doi.org/10.1111/geb.12182  
-- Wieczorek, M., Herzschuh, U., 2020. Compilation of relative pollen productivity (RPP) estimates and taxonomically harmonised RPP datasets for single continents and Northern Hemisphere extratropics. Earth Syst. Sci. Data 12, 3515–3528. https://doi.org/10.5194/essd-12-3515-2020
+- Wieczorek, M., Herzschuh, U., 2020. Compilation of relative pollen productivity (RPP) estimates and taxonomically harmonised RPP datasets for single continents and Northern Hemisphere extratropics. Earth Syst. Sci. Data 12, 3515–3528. https://doi.org/10.5194/essd-12-3515-2020  
+
+
 
 
 ## Poster download
