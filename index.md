@@ -38,10 +38,10 @@ The buffer distance to be used can be estimated using variograms, which show the
 
 | Data        | Dataset Name    | Source  |
 | ------------- |-------------| -----|
-| Pollen     | LegacyPollen 1.0 | Herzschuh et al. 2022|
-| REVEALS parameters| Compilation of relative pollen productivity|Wiezcorek & Herzschuh 2020 |
-| Remote sensing tree cover | Global 1-km Consensus Land Cover      |    Tuan & Jetz 2014 |  
-| Remote sensing land cover|CCI Land Cover (300m) | ESA 2017 |  
+| **Pollen**    | LegacyPollen 1.0 | Herzschuh et al. 2022|
+| **REVEALS parameters**| Compilation of relative pollen productivity|Wiezcorek & Herzschuh 2020 |
+| **Remote sensing tree cover** | Global 1-km Consensus Land Cover      |    Tuan & Jetz 2014 |  
+| **Remote sensing land cover**|CCI Land Cover (300m) | ESA 2017 |  
 
 Peter Ewald applied the REVEALS model using the pollen dataset and the parameter compilation.
  
