@@ -32,7 +32,7 @@ The reconstruction was optimized using a simplified model for converting pollen 
 The new model was validated using spatial leave-one-out (SLOO) cross-validation. In a traditional LOO cross-validation one site is left out of the model calibration and used for testing subsequently. Ideally, this is repeated with the each site and the mean error can be calculated. This allows the use of the entire data set for model calibration, while still having a realistic error estimate.  
 As ecological data is often spatially autocorrelated, the method has to be adjusted to account for that. This is why SLOO was used. Instead of only excluding one site, the sites in a certain proximity are also excluded from the model calibration. The testing is still only done on the original pixel.  
 The buffer distance to be used can be estimated using variograms, which show the variance between sites as a function of distance. The range of fitted variograms was used to determine an appropriate buffer for each continental optimization.
-![SLOO](/DaSciRecon/images/sloo.pg)
+![SLOO](/DaSciRecon/images/sloo.png)
  
 ## Data Sources
 
