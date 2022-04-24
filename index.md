@@ -9,8 +9,9 @@ On here I have added some more details about
 - [Selected Methods](#methods)
 - [Data sources](#data-sources)
 - [References](#references)  
+
 I also included a pdf of my [poster](#poster-download) as well as a link to the template I used.
-I'll keep this page up for the duration of the PhD Days, but feel free to [contact me](#about-the-presenter) if you'd like to know more.  
+I'll keep this page up for the duration of the PhD Days, but feel free to [contact me](#about-me) if you'd like to know more.  
   
 ## Methods
 
@@ -25,7 +26,10 @@ Tree cover was calculated by using the fraction of tree taxa abundance over tota
 
 ### Optimizing the Reconstruction
 The reconstruction was optimized using a simplified model for converting pollen abundances into vegetation abundances and by optimizing the taxon-specific correction coefficients. The model is based on an R-value model. It assumes that the pollen flux density produced by a specific taxon can be derived with a taxon-specific pollen parameter (_&alpha;_). When these parameters are known for all taxa, historic vegeation (*v*) can be reconstructed from historic pollen records.  
-![model-equations](/DaSciRecon/images/r-value.png)
+![model-equations](/DaSciRecon/images/r-value.png)  
+The optimizations aim was, therefore, to estimate these correction coefficients by trying to fit the reconstructed tree cover to the remotely sensed tree cover. Bounds for these coefficients for imposed on the optimization to avoid overfitting and to supply ecological information. For that purpose the REVEALS model outputs were used as a starting point.  
+Even though REVEALS takes into account both the taxon-specific pollen productivity and fall speed, its relationship to the original pollen record can be broken down to a simple coefficient as well.
+![reveals_equat](https://latex.codecogs.com/svg.image?REVEALS&space;\:&space;estimate_i&space;=&space;x_i&space;&space;*&space;Pollen&space;\:&space;count_i)
 
 
 ### Validating the new model
@@ -60,7 +64,7 @@ Peter Ewald applied the REVEALS model using the pollen dataset and the parameter
 I used the better poster approach developed by Mike Morrison. You can read more about it [here](https://astrobites.org/2020/02/28/fixing-academic-posters-the-betterposter-approach/).
  
  
-## About the presenter
+## About me
 ![authorportrait](/DaSciRecon/images/portrait2.jpg)  
 I'm **Laura Schild**, an environmental scientist (B.Sc.) and conservation biologist (M.Sc.) with a focus on and passion for data science.  
 I'm doing my PhD in the working groups for *High-Latitude Vegetation Change* and *Earth System Diagnostics* in the section for Polar Terrestrial Environmental Systems at the AWI branch in Potsdam. My PhD project focuses on the variability of vegetation and climate in the Arctic and how we can use data science to investigate them. More broadly, I am interested in climate-vegetation interactions, climate change biology, biodiversity, and socio-ecological systems.  
