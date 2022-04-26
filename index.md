@@ -5,41 +5,43 @@
 ## Thanks for your interest!
 
 Thanks for scanning the QR-code and wanting to find out more about my current project!   
-On here I have added some more details about 
+Here you can find: 
 - [Selected Methods](#methods)
 - [Data sources](#data-sources)
-- [References](#references)  
+- [References](#references)
+- a pdf of my [poster](#poster-download)
+- more [about me](#about-me)
 
 I also included a pdf of my [poster](#poster-download) as well as a link to the template I used.
 I'll keep this page up for the duration of the PhD Days, but feel free to [contact me](#about-me) if you'd like to know more.  
   
 ## Methods
 
-### Extracting remote sensing tree cover
+### Extracting remotely sensed tree cover
 The tree cover was extracted for the pollen source area (PSA) of each sampling site. The PSA was calculated using REVEALS and was defined as the area in which 80% of the deposited pollen originated from. REVEALS uses wind speed and pollen dispersal to asses this.  
 Mean tree cover from the remote sensing data set was extracted for these areas.
 
 ### Reconstructing tree cover
-Tree cover was reconstructed from the original pollen records, the REVEALS model output, and the optimized simplified model. Records younger than 450 years before present were considered for this. The large range is due to an assumed age uncertainty in records as well as noise in the signal.  
-Tree cover was calculated by using the fraction of tree taxa abundance over total taxa abundance. However, this assumes that the entire modern pollen source area to be vegetated, which is rarely the case. Therefore, a correction for the openness of the pollen source area was applied. This openness correction was derived from the CCI land cover product by using the fraction of open cells in the pollen source area as a measure of its openness.  
+Tree cover was reconstructed from the original pollen records, the REVEALS model output, and the optimized simplified model. Records younger than 450 years before present were considered for this. The large temporal range is due to an assumed age uncertainty in records as well as noise in the signal.  
+Tree cover was calculated by using the fraction of tree taxa abundance over total taxa abundance. However, this assumes that the entire modern pollen source area to be vegetated, which is rarely the case. Therefore, a correction for the openness of the pollen source area was applied. This openness correction was derived from the CCI land cover product by using the fraction of open cells in the pollen source area as a measure for its openness.  
 ![openness_correction](/DaSciRecon/images/open.png)
 
 ### Optimizing the Reconstruction
 The reconstruction was optimized using a simplified model for converting pollen abundances into vegetation abundances and by optimizing the taxon-specific correction coefficients. The model is based on an R-value model. It assumes that the pollen flux density produced by a specific taxon can be derived with a taxon-specific pollen parameter (_&alpha;_). When these parameters are known for all taxa, historic vegeation (*v*) can be reconstructed from historic pollen records.  
 ![model-equations](/DaSciRecon/images/r-value.png)  
-The optimizations aim was, therefore, to estimate these correction coefficients by trying to fit the reconstructed tree cover to the remotely sensed tree cover. Bounds for these coefficients for imposed on the optimization to avoid overfitting and to supply ecological information. For that purpose the REVEALS model outputs were used as a starting point.  
+The optimizations aim was, therefore, to estimate these correction coefficients by trying to fit the reconstructed tree cover to the remotely sensed tree cover. Bounds for these coefficients were imposed on the optimization to avoid overfitting and to supply ecological information. For that purpose the REVEALS model outputs were used as a starting point.  
 Even though REVEALS takes into account both the taxon-specific pollen productivity and fall speed, its relationship to the original pollen record can be broken down to a simple coefficient as well.  
 
 ![reveals_equat](https://latex.codecogs.com/svg.image?REVEALS&space;estimate_i&space;=&space;x_i&space;&space;*&space;Pollen&space;count_i)  
 
 However, this coefficient, x, will not be the same between different samples, as it also depends on the abundance of the remaining taxa in the assemblage. This essentially means that the coefficient has to be normalized before it is comparable and can be used in the optimization.  
-The easiest way of normalizing these coeffcients is by dividing them by the coeffcient of one taxa at each site. This way the values all become relative to one taxon. An obvious taxon to use for this is Poaceae (grasses) as they are ubiquitous in records and already used to normalized pollen productivity estimates. The normalization was done using the following equation.  
+The easiest way of normalizing these coeffcients is by dividing them by the coeffcient of one taxa in each sample. This way the values all become relative to one taxon. An obvious taxon to use for this is Poaceae (grasses) as they are ubiquitous in records and already used to normalized pollen productivity estimates. The normalization was done using the following equation.  
 
 ![reveals_equation2](https://latex.codecogs.com/svg.image?x_i&space;=\frac{REVEALSestimate_i&space;*&space;Pollencount_{Poaceae}}{Pollencount_i*&space;REVEALSestimate_{Poaceae}})..
 
 
-The normalized coefficients are very similar between sites (as they should). To now allow room for optimization, a buffer was added to the range of the coefficient values. This gives an upper and a lower bound for the coefficient of each taxon to be optimized. The correction coefficients for the remaining taxa were set to the median normalized coefficient extracted from REVEALS. For the results presented on the poster the coefficients for the ten most common taxa were optimized for each continent.
-
+The normalized coefficients are very similar between samples (as they should). To now allow room for optimization, a buffer was added to the range of the coefficient values. This gives an upper and a lower bound for the coefficient of each taxon to be optimized. The correction coefficients for the remaining taxa were set to the median normalized coefficient extracted from REVEALS. For the results presented on the poster the coefficients for the ten most common taxa were optimized for each continent.  
+The R-packages `optimParallel` was used to to run a parallelized optimization using the L-BFGS (limited-memory Broyde-Fletcher-Goldfarb-Shanno) algorithm. 
 
 ### Validating the new model
 The new model was validated using spatial leave-one-out (SLOO) cross-validation. In a traditional LOO cross-validation one site is left out of the model calibration and used for testing subsequently. Ideally, this is repeated with the each site and the mean error can be calculated. This allows the use of the entire data set for model calibration, while still having a realistic error estimate.  
