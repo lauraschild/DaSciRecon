@@ -12,7 +12,6 @@ Here you can find:
 - a pdf of my [poster](#poster-download)
 - more [about me](#about-me)
 
-I also included a pdf of my [poster](#poster-download) as well as a link to the template I used.
 I'll keep this page up for the duration of the PhD Days, but feel free to [contact me](#about-me) if you'd like to know more.  
   
 ## Methods
