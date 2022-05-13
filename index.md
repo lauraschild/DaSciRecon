@@ -7,7 +7,7 @@
 Thanks for scanning the QR-code and wanting to find out more about my current project!   
 Here you can find: 
 - [Selected Methods](#methods)
-- [Correction Coefficients] (#correction-coefficients)
+- [Correction Coefficients](#correction-coefficients)
 - [Data sources](#data-sources)
 - [References](#references)
 - a pdf of my [poster](#poster-download)
